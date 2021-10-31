@@ -18,4 +18,4 @@ rdd= rdd.filter(lambda x: x!=headers).map(lambda x:x.split(','))
 columns = headers.split(',')
 dfRdd= rdd.toDF(columns)
 
-print(rdd)
+print(dfRdd)
